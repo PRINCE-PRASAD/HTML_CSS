@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+
+        #box1 {
+            background-color: chartreuse;
+            position: relative;
+            top: 49px;
+            z-index: -35;
+        }
+
+        #box2 {
+            background-color: rgb(226, 42, 17);
+            position: relative;
+            top: 14px;
+            z-index: -165px;
+            /* z-index will work only for position: relative, absolute,fixed,or sticky */
+        }
+
+        #box3 {
+            background-color: rgb(32, 29, 230);
+            visibility: hidden;
+            /* use for hide the element but it take place what ever it needs ocopied place in site */
+        }
+
+        #box4 {
+            background-color: rgb(208, 228, 30);
+        }
+        #box5{
+            background-color: darkblue;
+            visibility: hidden;
+            display: none;
+            /* use for hide the box but it does not need any place fo occuypy any space */
+        }
+        #box6{
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div.box#box$*4 for automatic id 1,2,3,4 -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    <div class="box" id="box5"></div>
+    <div class="box" id="box6"></div>
+</body>
+
+</html>

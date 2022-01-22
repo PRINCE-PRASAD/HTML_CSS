@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        
+        }
+        .container ul li div h2{
+            text-shadow: 10px 12px white;
+        }
+        .container ul div h2{
+            text-shadow: 10px 12px 6px rgb(118, 4, 248);
+        }
+
+
+        .card {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            border: 2px solid red;
+            background-color: salmon;
+            box-shadow: 10px 13px green;
+
+        }
+
+        .card1 {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            border: 2px solid red;
+            background-color: salmon;
+            box-shadow: -10px -13px rgb(188, 199, 42);
+        }
+
+        .card11 {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            border: 2px solid red;
+            background-color: salmon;
+            box-shadow: 10px 13px 50px rgb(22, 187, 63);
+
+        }
+
+        .card111 {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            border: 2px solid red;
+            background-color: salmon;
+            box-shadow: 10px 13px 50px 37px rgb(187, 115, 22);
+
+        }
+
+        .card1111 {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            border: 2px solid red;
+            background-color: salmon;
+            box-shadow: 10px 13px 50px 37px rgb(175, 253, 58, 0.5)
+        }
+
+        .card11111 {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            border: 2px solid red;
+            background-color: salmon;
+            box-shadow: inset 10px 13px rgb(230, 93, 29);
+
+        }
+        .card22 {
+            padding: 23px 12px;
+            margin: 23px 12px;
+            border: 2px solid rgb(20, 19, 19);
+            background-color: salmon;
+            box-shadow: 10px 13px green,50px 50px orange;
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li>
+
+                <div class="card111" id="card4">
+                    <h2>card10</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus esse sed ipsam qui
+                        voluptas eaque, quidem commodi officia iusto est vero ut laborum. Saepe incidunt unde voluptatem
+                        rem excepturi?</p>
+                </div>
+                <div class="card111" id="card5">
+                    <h2>card11</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nam quo unde dolore eos error
+                        iure optio labore, rem ab, nemo suscipit reprehenderit eligendi exercitationem corporis vel
+                        accusantium. Repellat, numquam!</p>
+                </div>
+                <div class="card111" id="card6">
+                    <h2>card12</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores voluptates placeat repudiandae
+                        molestiae corrupti culpa deleniti adipisci libero magnam. Et tenetur vel dolor natus sunt magnam
+                        ipsa, sint eligendi. Incidunt.</p>
+                </div>
+            </li>
+        </ul>
+        <ul>
+
+            <div class="card" id="card1">
+                <h2>card1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus esse sed ipsam qui voluptas
+                    eaque, quidem commodi officia iusto est vero ut laborum. Saepe incidunt unde voluptatem rem
+                    excepturi?</p>
+            </div>
+            <div class="card" id="card2">
+                <h2>card2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nam quo unde dolore eos error iure
+                    optio labore, rem ab, nemo suscipit reprehenderit eligendi exercitationem corporis vel accusantium.
+                    Repellat, numquam!</p>
+            </div>
+            <div class="card" id="card3">
+                <h2>card3</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores voluptates placeat repudiandae
+                    molestiae corrupti culpa deleniti adipisci libero magnam. Et tenetur vel dolor natus sunt magnam
+                    ipsa, sint eligendi. Incidunt.</p>
+            </div>
+        </ul>
+        <ul>
+
+            <div class="card1" id="card4">
+                <h2>card4</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus esse sed ipsam qui voluptas
+                    eaque, quidem commodi officia iusto est vero ut laborum. Saepe incidunt unde voluptatem rem
+                    excepturi?</p>
+            </div>
+            <div class="card1" id="card5">
+                <h2>card5</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nam quo unde dolore eos error iure
+                    optio labore, rem ab, nemo suscipit reprehenderit eligendi exercitationem corporis vel accusantium.
+                    Repellat, numquam!</p>
+            </div>
+            <div class="card1" id="card6">
+                <h2>card6</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores voluptates placeat repudiandae
+                    molestiae corrupti culpa deleniti adipisci libero magnam. Et tenetur vel dolor natus sunt magnam
+                    ipsa, sint eligendi. Incidunt.</p>
+            </div>
+        </ul>
+        <ul>
+            <li>
+
+                <div class="card11" id="card4">
+                    <h2>card7</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus esse sed ipsam qui
+                        voluptas eaque, quidem commodi officia iusto est vero ut laborum. Saepe incidunt unde voluptatem
+                        rem excepturi?</p>
+                </div>
+                <div class="card11" id="card5">
+                    <h2>card8</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nam quo unde dolore eos error
+                        iure optio labore, rem ab, nemo suscipit reprehenderit eligendi exercitationem corporis vel
+                        accusantium. Repellat, numquam!</p>
+                </div>
+                <div class="card11" id="card6">
+                    <h2>card9</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores voluptates placeat repudiandae
+                        molestiae corrupti culpa deleniti adipisci libero magnam. Et tenetur vel dolor natus sunt magnam
+                        ipsa, sint eligendi. Incidunt.</p>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+
+                <div class="card1111" id="card4">
+                    <h2>card13</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus esse sed ipsam qui
+                        voluptas eaque, quidem commodi officia iusto est vero ut laborum. Saepe incidunt unde voluptatem
+                        rem excepturi?</p>
+                </div>
+                <div class="card1111" id="card5">
+                    <h2>card14</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nam quo unde dolore eos error
+                        iure optio labore, rem ab, nemo suscipit reprehenderit eligendi exercitationem corporis vel
+                        accusantium. Repellat, numquam!</p>
+                </div>
+                <div class="card1111" id="card6">
+                    <h2>card15</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores voluptates placeat repudiandae
+                        molestiae corrupti culpa deleniti adipisci libero magnam. Et tenetur vel dolor natus sunt magnam
+                        ipsa, sint eligendi. Incidunt.</p>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+
+                <div class="card11111" id="card4">
+                    <h2>card16</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus esse sed ipsam qui
+                        voluptas eaque, quidem commodi officia iusto est vero ut laborum. Saepe incidunt unde voluptatem
+                        rem excepturi?</p>
+                </div>
+                <div class="card11111" id="card5">
+                    <h2>card17</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nam quo unde dolore eos error
+                        iure optio labore, rem ab, nemo suscipit reprehenderit eligendi exercitationem corporis vel
+                        accusantium. Repellat, numquam!</p>
+                </div>
+                <div class="card11111" id="card6">
+                    <h2>card18</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores voluptates placeat repudiandae
+                        molestiae corrupti culpa deleniti adipisci libero magnam. Et tenetur vel dolor natus sunt magnam
+                        ipsa, sint eligendi. Incidunt.</p>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+
+                <div class="card22" id="card4">
+                    <h2>card19</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus esse sed ipsam qui
+                        voluptas eaque, quidem commodi officia iusto est vero ut laborum. Saepe incidunt unde voluptatem
+                        rem excepturi?</p>
+                </div>
+                <div class="card22" id="card5">
+                    <h2>card20</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nam quo unde dolore eos error
+                        iure optio labore, rem ab, nemo suscipit reprehenderit eligendi exercitationem corporis vel
+                        accusantium. Repellat, numquam!</p>
+                </div>
+                <div class="card22" id="card6">
+                    <h2>card21</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores voluptates placeat repudiandae
+                        molestiae corrupti culpa deleniti adipisci libero magnam. Et tenetur vel dolor natus sunt magnam
+                        ipsa, sint eligendi. Incidunt.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance-selector</title>
+    <style>
+h1{
+    background-color: brown;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+/* div p{
+    color: blue;
+    background-color: blueviolet;
+    font-weight: bold;
+} */
+      /* div > p{ */
+    /* this line means div direct (>) inside p only get affeted by this parameters only affect the direct child of div */
+    /* color: rgb(31, 207, 75);
+    background-color: rgb(22, 134, 209);
+    font-weight: bold;
+}  */
+div + p{
+    /* this line means sibling of div get affected (+) */
+    color: rgb(31, 207, 75);
+    background-color: rgb(22, 134, 209);
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+<h1>This is no more selctor</h1>  
+<div class="container">
+    <div class="row">
+        <ul>
+            <li class="item">
+                <p>this paragraph insiside p,li ,ul,row,container</p>
+                <li>this line is just binside li </li>
+            </li>
+        </ul>
+        <p>this is inside row paragraph</p>
+    </div>
+    <p>this paragraph is outside of row</p>
+</div>  
+<p>this top outmost container</p>
+</body>
+
+</html>

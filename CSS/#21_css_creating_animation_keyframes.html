@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating animation and keyframes</title>
+    <style>
+        .container {
+            background-color: greenyellow;
+        }
+
+        .box {
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: HAPPY;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /* animation-fill-mode: forwards; */
+            /* for animation is in filled position are not in a back in previous state  */
+            animation-fill-mode: alternate;
+            /* for animation is completed and it is back in  a normal position */
+            /* animation-timing-function: ease-in; */
+            /* inside the animation if u need slow startind and fast closing use 10 */
+            /* animation-timing-function: ease-out; */
+            /* inside the animation if u need slow end and fast starting use 10 */
+            /* animation-timing-function: ease-in-out; */
+            /* start slow middle fast end slow */
+            /* animation-delay: 3s; */
+            /* if u need delay of three seconde */
+            animation-direction: reverse;
+            /* animation in reverse direction */
+            /* animation: -name duration timing funtion; */
+            /* animation: HAPPY 5s ease-in-out 1s 12 backwards; */
+            /* shorthand for animation name,duration,-o-animation-timing-function,animation-delay,animation-iteration-count, animation-fill-mode: ; */
+
+
+
+        }
+
+        /* @keyframes HAPPY{
+            from{
+                width: 200px;
+            }
+            to{
+                width: 800px;
+            }
+        } */
+        @keyframes HAPPY {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 25px;
+                left: 0px;
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            this is box
+        </div>
+    </div>
+</body>
+
+</html>

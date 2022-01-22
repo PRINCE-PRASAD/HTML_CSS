@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        .container {
+            height: 500px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            /* properties for flex container */
+            /* flex-direction: row; */
+            /* (default vale of flex-direction is row) */
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+             flex-direction: column-reverse; */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-wrap: nowrap; set as defult */
+            /* flex-wrap: use for responsive web design and u minimize the screen then it will wrap the containt according to screen size  */
+            /* flex-flow: row-reverse wrap; */
+            /* it is short hand for flex direction: and flex-wrap: */
+            /* justify-content: center; */
+            /* if u have to center aligned then use this */
+            /* justify-content: space-between; */
+            /* for providing equal space between two content not space in starting and end */
+            /* justify-content: space-evenly; */
+            /* for providing equal space between all content */
+            /* justify-content: space-around; */
+            /* for providing equal space in left and right of contant */
+            /* align-items: center; */
+            /* to put the all containt i the  vertically center of page */
+            /* align-items: flex-end; */
+            /* for downword center of page */
+            /* align-items: flex-start; */
+            /* for center upward of the page */
+            /* align-items: stretch; */
+
+
+        }
+
+        .item {
+            background-color: rgb(30, 211, 39);
+            border: 10px solid fuchsia;
+            margin: 10px;
+            padding: 3px;
+            width: 100px;
+            height: 100px;
+        }
+
+        #item-1 {
+            /* flex properties for flex item */
+            /* order: 3; */
+            /* flex-grow: 2; */
+            /* for growing the containt's width ratio according to web page */
+        }
+
+        #item-2 {
+            /* order: 2; */
+            /* if u want to arrange your content order in certain way the use this small ordrwill come first  */
+            /* flex-shrink: 3; */
+            /* for shrinking the containt's width ratio according to web page */
+        }
+
+        #item-3 {
+            /* order: 1; */
+            flex-basis: 320px;
+            /* when flex direction is set to row flex-basis will control width */
+            /* when flex direction is set to column flex-basis will control hight */
+        }
+
+        #item-4 {
+            /* order: 5; */
+            flex: 2 2 400px;
+            /* for flex box short hand flex: grow shrink basics; */
+            align-self: flex-end;
+            /* for put your containt in end */
+        }
+
+        #item-5 {
+            /* order: 6; */
+            align-self: center;
+            /* for put your containt in center */
+
+        }
+
+        #item-6 {
+            /* order: 4; */
+            align-self: flex-start;
+            /* for put your containt in start */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>THIS IS FLEX BOX</h1>
+    <div class="container">
+
+        <div class="item" id="item-1">first box</div>
+        <div class="item" id="item-2">second box</div>
+        <div class="item" id="item-3">third box</div>
+        <div class="item" id="item-4">fourth box</div>
+        <div class="item" id="item-5">fifth box</div>
+        <div class="item" id="item-6">sixth box</div>
+
+    </div>
+</body>
+
+</html>

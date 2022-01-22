@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+<style>
+    /* here we do comment in css this way  */
+    p{
+        color: darkred;
+        border: 2px solid purple
+    }
+    /* just because i use border in every paragraph not in particular parargraph */
+    #target1{
+        color: deeppink;
+    }
+    .target2{
+        color: green;
+    }
+    .backgroungcolor{
+        background-color: lawngreen;
+    }
+    span,footer{
+        background-color: rgb(238, 224, 29);
+    }
+</style>
+
+
+</head>
+<body>
+    <h3>now we do little bit of css</h3>
+<p>this is a samole para that help us to know the css</p>
+<p id="target1"> another sample of parra where we target one of id or class</p>
+<p class="target2 backgroungcolor ">if we have to do some class file</p>
+<div>
+    <p>
+        lets see does it affect the div or not mainly dark red
+    </p>
+</div>
+<span> lets see about the grouping colour</span>
+<footer>here we also see the effect of grouping but here 1st clour does not get affect</footer>
+</body>
+</html>

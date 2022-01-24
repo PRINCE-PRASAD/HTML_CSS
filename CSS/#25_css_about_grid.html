@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-rows: 1fr 1fr 3fr;
+            /* for size of rows from row 1 to 3 out of total row */
+            grid-auto-rows: 4fr;
+            /* for remaining rows in the diplay change acordimg to this command */
+            /* grid-template-columns: 1fr 4fr 2fr; */
+            /* for partision in coulumns */
+            grid-template-columns: repeat(4, 3fr);
+            /* for repeat 4 times in columns and 3rd coulumn will be 3fr in size */
+            grid-gap: 1rem;
+            /* fpr space between all grid */
+
+        }
+        .box{
+            background-color: blueviolet;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <!-- div.box{this is box$}*10 -->
+        <div class="box">this is box1</div>
+        <div class="box">this is box2</div>
+        <div class="box">this is box3</div>
+        <div class="box">this is box4</div>
+        <div class="box">this is box5</div>
+        <div class="box">this is box6</div>
+        <div class="box">this is box7</div>
+        <div class="box">this is box8</div>
+        <div class="box">this is box9</div>
+        <div class="box">this is box10</div>
+    </div>
+    </body>
+</html>

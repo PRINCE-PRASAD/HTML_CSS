@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string function</title>
+</head>
+
+<body>
+    <script>
+        var str = "This is a string";
+        console.log(str);
+        //string always start with 0
+        // here we create variable as string
+
+        var position = str.indexOf('is');
+        console.log(position)
+        // it will show 1st time where we got 'is' (substring) in this case ans is '2'
+
+        var position = str.lastIndexOf('is');
+        console.log(position)
+        // it will show last time where we got 'is'(substring) in this case ans is '5'
+
+        var substr = str.slice(1, 7);
+        console.log(substr)
+        //  here we got substring from a string by slincing it im this case answer is 'his is' 1 to 6 here 0 and 7 are not included
+        //slice comand can take negetive value 
+
+        var substr1 = str.substring(1, 7);
+        console.log(substr1)
+        //  here we got substring from a string by slincing it im this case answer is 'his is' 1 to 6 here 0 and 7 are not included
+        // it can not take negetive value
+
+        var substr2 = str.substr(1, 7);
+        console.log(substr2)
+        //  it just extract substring from  old string 1 to 7 it can't  slice the string 
+
+        var replaced = str.replace('string', 'prince');
+        console.log(str)
+        console.log(replaced)
+        // for repalce in old string  we use this command  new string is created but old one also active
+
+        console.log(str.toLocaleUpperCase());
+        // for string in uppercase we use this command
+
+        console.log(str.toLocaleLowerCase());
+        // for string in lowercase we use this command
+
+        var newstring = str.concat(' i am added')
+        console.log(newstring)
+        // for addind any thing in the string we use this comand
+
+        var srtwithwhitespaces = "  this contains       white spaces  ";
+        console.log(srtwithwhitespaces)
+        console.log(srtwithwhitespaces.trim())
+        // it remove white space only with starting place and ending place
+
+        var char2 = str.charAt(2);
+        console.log(char2) 
+        // it will return what is at the 2nd posistion in this case anser is  i
+
+        var char2 = str.codePointAt(2);
+        console.log(char2)
+        // in this case we can find character code for i
+        
+        console.log(str[2])
+        console.log(str[3])
+        // we can also slice with this method also
+
+
+
+    </script>
+
+
+</body>
+
+</html>

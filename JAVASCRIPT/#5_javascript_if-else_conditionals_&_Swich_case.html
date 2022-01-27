@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+            <li>item4</li>
+            <li>item5</li>
+            <li>item6</li>
+            <li>item7</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = " this is a string";
+        var string1 = " this is a string2";
+        console.log(string1);
+        // here we can se we declair two value in 1 variable but we can see 2nd ans is showing due to overide 
+        // here var is alwaysw global
+
+        let a = "u";
+        {
+            let a = "u6";
+            console.log(a)
+        }
+        console.log(a)
+        // we have to use "let" insted of var because of we can use globlal and and local  
+
+
+
+        // const a = " const can not be change in any way "
+        // a = " lets see can we chnge it or not "
+        // console.log(a);
+        // it will show error because we can't use const item for more than 1 time
+
+
+        //-------------------------------------------------------------------------------------------------------------
+        // here  we can also use if else and elseif
+        let age = 34;
+        if (age > 18) {
+            console.log("You can drink water");
+        }
+        else if (age == 2) {
+            console.log("Age is 2")
+        }
+        else if (age == 5) {
+            console.log("Age is 5")
+        }
+        else {
+            console.log("You can drink Cold Drink");
+        }
+//-------------------------------------------------------------------------------------------------------------
+                                        //   swich case
+        const cups = 47;
+        switch (cups) {
+            case 4:
+                console.log("The value of cups is 4")
+                break;
+
+            case 41:
+                console.log("The value of cups is 41")
+                break;
+
+            case 42:
+                console.log("The value of cups is 42")
+                break;
+
+            case 43:
+                console.log("The value of cups is 43")
+                break;
+
+            default:
+                console.log("The value of cups is none of 4, 41, 42, 43")
+                break;
+        }
+
+
+    </script>
+</body>
+
+</html>

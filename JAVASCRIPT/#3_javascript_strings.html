@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT | STRINGS AND STRNG METHODS </title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <div id="content"></div>
+        <p1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero labore maxime fugiat aperiam et totam odio
+            accusamus perspiciatis modi quidem assumenda non voluptas amet possimus quibusdam, voluptatem corrupti
+            natus, aliquid nemo dolorem cum iure!</p1>
+    </div>
+    <script>
+        // var string = "this"
+        // u bcan use any tof this "this" 'this' `this`
+        var string = 'this';
+        var name = 'prince';
+        var channel = 'devilserver';
+        var message = 'prince is a bad boy';
+        console.log(string + name + message);
+        // here in console it will show -thisprinceprince is a bad boy    
+
+        var temp = `${name} is a devil  has a gaming server name is ${channel}`;
+        console.log(temp);
+        // here in console it will show prince is a devil has a gaming server name is devilserver
+        var len = name.lenght;
+        console.log(`Lenght of name is ${len}`)
+        var y = new String("this");
+        console.log(y);
+        document.getElementById(`content`).innerHTML = '<h3> this is an h3 heading </h3>'
+        'this is  n h3 heading'
+    </script>
+</body>
+
+</html>

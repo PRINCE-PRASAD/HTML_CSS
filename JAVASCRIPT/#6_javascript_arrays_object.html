@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>here we start</h1>
+    </div>
+    <script>
+        let myvar = 34;
+        let myvar2 = "string";
+        let myvar3 = true;
+        let myvar4 = null;
+        let myvar5 = undefined;
+
+
+        // we can store any think in variable
+        // just typr myvar3 u will get a result accorging to program
+        // -------------------------------------------------------------------------------------------------
+
+        let employee = {
+            name: "prince",
+            salary: 1000,
+            channel1: "brownion devil server",
+            "channel 2": "brownion fry server",
+            // if we have to search the  channel 2 then we have to search like this employee['channel 2'] just because of space 
+            // if we use space in vaiable so we have to write within ""
+        }
+        console.log(employee);
+        // ------------------------------------------------------------------------------------------------------
+        let names = [1, 2, 4, "prince", undefined];
+        console.log(names);
+        // one more way to show the full Array
+
+        console.log(names[3]);
+        // it will show what is at 3rd position at array
+
+        let names1 = new Array(51, 2, 42, "prince", undefined);
+        console.log(names1);
+        // one more way to show the full Array
+
+        console.log(names.length);
+        console.log(names1.length);
+        // it will show lenght of array
+
+        names1 = names1.sort();
+        console.log(names1);
+        //use for short array
+
+        names1.push("i wan't to push this");
+        console.log(names);
+        // for add a new array in last
+
+        let names3 = new Array(23);
+        console.log(names3);
+//  for adding 23 bank or empty array by writing name3[0],or name3[5]
+
+
+
+    </script>
+</body>
+
+</html>

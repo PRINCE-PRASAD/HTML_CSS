@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>this is all about the loop </h1>
+    </div>
+    <script>
+        console.log("this is #9");
+
+        // first old method in js
+        let i = 0;
+        for (i = 0; i < 3; i++) {
+            console.log(i);
+        }
+
+        // new way for  for loop
+        let friends = ["kushal", "ayush", "raj", "sirat", "hemu"];
+
+        // for
+
+        for(let index = 0; index < friends.length; index++) {
+            console.log("hello friend, " + friends[index]);
+        }
+        // ---------------------------------------------------------------------------------------------------------
+
+        // foreach
+
+        friends.forEach(function f(element) {
+            console.log("hello friends, " + element + " to brownion server");
+        });
+        // ----------------------------------------------------------------------------------------------------------
+        for(element of friends) {
+            console.log("hello frinds, " + element + " to devil server");
+        }
+        //-----------------------------------------------------------------------------------------------------------
+        // do while loop
+        
+        let employee = {
+            Name: "prince",
+            salary: 2,
+            channel: "cwh"
+        }
+        for(key in employee) {
+            console.log(`the ${key} of employee is ${employee[key]}`);
+        }
+        let c =0;
+        while(c<4){
+            console.log(`${c} is less than 4`);
+            c++;
+        }
+        let j =34;
+        do{
+            console.log(`${j} is less than 4 and we are inside do while loop`);
+            j++;
+        }while (j < 4);
+
+    </script>
+</body>
+
+</html>

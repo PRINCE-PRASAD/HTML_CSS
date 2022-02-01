@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>More About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">Another Container</div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+        // for target the main
+
+        let nav = document.getElementById('nav');
+        console.log(nav);
+        // for targeting the nav
+
+        let container = document.getElementsByClassName('container');
+        console.log(container);
+        // if u write container[0] then u target 1st container and if u write container[1] then u target 2nd container
+
+
+        // let sel = document.querySelector('#nav>li');
+        // console.log("Selector returns ", sel)
+        // for targeting css we can use this 
+
+        let sel = document.querySelectorAll('#nav>li');
+         console.log("Selector returns ", sel)
+        //  for targeting all properties of css we can use this
+
+    </script>
+</body>
+
+</html>

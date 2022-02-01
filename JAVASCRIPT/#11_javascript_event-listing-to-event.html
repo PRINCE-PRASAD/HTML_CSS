@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #btn {
+        padding: 10px 14px;
+        background-color: pink;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <!-- browser events example 
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup 
+    mousemove
+
+    submit
+    focus
+
+    DOMContentLoded
+
+    transitioned -->
+
+    <div class="container">
+        <h1>This is Heading</h1>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet eius eum placeat beatae libero porro
+            voluptatibus sint commodi dignissimos magnam doloremque natus ducimus, voluptate dolores assumenda illum.
+            Vitae quasi vel accusamus porro beatae reprehenderit magni ad excepturi voluptatum. Voluptate perspiciatis
+            enim sapiente blanditiis minima soluta maiores accusantium eaque sed eveniet quasi ducimus asperiores,
+            suscipit fugit, excepturi voluptatibus beatae maxime. Necessitatibus ipsa, reiciendis quaerat vel
+            exercitationem sapiente dignissimos voluptatibus eaque. Quas labore recusandae fugit modi ratione.
+            Laboriosam, nulla beatae. Quas architecto rerum illo hic omnis, dicta aperiam, tenetur, corrupti perferendis
+            alias natus vel quaerat illum? Minima ullam perspiciatis temporibus vel pariatur eaque magni officiis totam
+            unde rem, inventore recusandae enim obcaecati, aut doloribus, fugiat nihil. Tempora in optio esse nulla,
+            nemo aperiam repellat itaque, alias minus rerum necessitatibus praesentium quas vero porro voluptatem odit
+            eligendi, quidem est ipsum doloremque pariatur a ullam nisi laboriosam. Minima deleniti similique magnam
+            aliquam accusantium atque quia temporibus earum qui voluptate, ea, maiores labore minus. Natus labore
+            repellendus minus temporibus corporis recusandae tempora officiis vitae minima error. Temporibus ex
+            molestias obcaecati inventore asperiores beatae recusandae, cupiditate quis reiciendis perferendis ea id!
+            Maxime fugit id, blanditiis rerum quisquam quidem, consectetur magni odio amet rem aperiam voluptatum veniam
+            adipisci quas tenetur, dignissimos culpa. Aliquid, non. Nihil earum soluta possimus vero quas odio dolorem?
+            Nemo fugiat, architecto aliquam iste tempore consequuntur culpa similique earum vel itaque, dignissimos
+            praesentium deserunt quia laboriosam sapiente atque! Magni, error saepe incidunt excepturi placeat tempora
+            in quos dolor maiores, modi quis ea aperiam nostrum repellat voluptatibus id. Sint beatae debitis qui porro
+            alias, placeat, ab quidem non quia molestias consectetur officia saepe. Nostrum beatae voluptatem
+            consequatur natus voluptatibus totam, quod expedita, placeat, dolores incidunt voluptate temporibus
+            repellendus? Ad obcaecati perferendis incidunt, dolores quos sequi vitae laboriosam aliquid! Odio, culpa
+            quos sed ipsum deleniti assumenda.</p>
+    </div>
+
+    <button id="btn" onclick="ToggleHide()">show/hide</button>
+    <script>
+        function ToggleHide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            // if u dom't write this 2 lines it will work
+
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        }
+        // this we use for hide paragraph 
+
+
+
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run() {
+            alert('mouse inside')
+            // in case of chacking we can also write console.log in case of alert
+        });
+
+        para.addEventListener('mouseout', function run() {
+            alert('mouse now went outside')
+            // in case of chacking we can also write console.log in case of alert
+        });
+    </script>
+
+</body>
+
+</html>

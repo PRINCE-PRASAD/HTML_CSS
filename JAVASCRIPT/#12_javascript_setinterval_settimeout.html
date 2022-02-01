@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+<h1>this is a contaier</h1>
+    </div>
+    <script>
+        // setTimeout---> use for allow us to run the function once after the interval of time
+        // clearTimeout---> use for allow us to run the function repeatedly after the interval of time
+
+function test(){
+    console.log("hello good morning");
+}
+setTimeout(test,5000);
+// for single 
+// ---------------------------------------------------------------------------------------------------------
+function test1(Name){
+    console.log("hello good morning " + Name);
+}
+setTimeout(test1,8000,"prince");
+// for double
+//----------------------------------------------------------------------------------------------------------
+function test2(Name, wish){
+    console.log("hello good morning " + Name + " " + wish);
+}
+setTimeout(test2,10000,"prince", " take care");
+// for multiinput
+//----------------------------------------------------------------------------------------------------------
+function test3(Name, wish){
+    console.log("hello good morning " + Name + " " + wish);
+}
+timeouttest = setTimeout(test3,12000,"prince", " take care");
+console.log(timeouttest);
+
+clearTimeout(timeouttest);
+// here we use in a case if a user singup in a limit time then we have to clear or stop the time-out option 
+// ------------------------------------------------------------------------------------------------------------
+function test4(Name, wish){
+    console.log("hello good morning " + Name + " " + wish);
+}
+setInterval(test4,14000,"prince", " take care");
+// ------------------------------------------------------------------------------------------------------------
+function test5(Name, wish){
+    console.log("hello good morning " + Name + " " + wish);
+}
+timeoutid = setInterval(test5,15000,"prince", " take care");
+clearInterval(timeoutid);
+// here we use in a case if a user singup in a limit time then we have to clear or stop the time-out option 
+//------------------------------------------------------------------------------------------------------------
+    </script>
+</body>
+</html>

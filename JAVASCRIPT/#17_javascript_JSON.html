@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">this is one of the container</div>
+    <script>
+        let jsonObj = {
+            name: "Prince",
+            channel: "brownion's",
+            friend: "gupta",
+            food: "chola",
+        }
+console.log(jsonObj);
+
+let myjsonstr = JSON.stringify(jsonObj);
+console.log(myjsonstr);
+// sringify use for make oject to string
+
+myjsonstr = myjsonstr.replace('Prince', 'kushal');
+console.log(myjsonstr)
+//for replace of any string
+
+newjsonobj = JSON.parse(myjsonstr);
+console.log(newjsonobj)
+//change string into the object
+
+    </script>
+</body>
+</html>

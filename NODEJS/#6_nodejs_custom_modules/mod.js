@@ -5,7 +5,7 @@ function testaverage(arr) {
     arr.forEach(element => {
     sum += element;    
     });
-    return sum/arr.lenght;
+    return sum/arr.length;
      }
 
     // module.exports = testaverage;

@@ -23,7 +23,7 @@ const server = http.createServer((req, res)=>{
         res.end(about);
     }
     else if(url == '/service'){
-        res.end(about);
+        res.end(service);
     }
     else if(url == '/contact'){
         res.end(contact);

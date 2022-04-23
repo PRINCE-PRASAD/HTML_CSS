@@ -97,8 +97,11 @@ rs
 */
 // -------------------------------------------------------------
 
+const { application } = require("express");
 const express = require("express")
 const port = 80;
+
+// app.use('/static', express.static('static'))
 
 const aap = express();
 

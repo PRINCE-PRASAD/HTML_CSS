@@ -14,8 +14,9 @@ const server = http.createServer((req, res)=>{
     console.log(req.url);
     url = req.url;
 
-    res.statusCode = 200;
+    res.statusCode = 200; 
     res.setHeader('Content-Type', 'text/html');
+    
     if(url == '/'){
         res.end(home);
     }

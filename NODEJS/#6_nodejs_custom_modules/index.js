@@ -5,4 +5,5 @@
 
 const mod = require("./mod");
 console.log(mod.avg([8,4]))
+console.log(mod.name1)
 console.log("this is index.js");

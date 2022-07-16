@@ -1,18 +1,18 @@
 console.log("This come under module");
 
 function testaverage(arr) {
-    let sum = 0;
-    arr.forEach(element => {
-    sum += element;    
-    });
-    return sum/arr.length;
-     }
+  let sum = 0;
+  arr.forEach((element) => {
+    sum += element;
+  });
+  return sum / arr.length;
+}
 
-    // module.exports = testaverage;
+// module.exports = testaverage;
 
-    module.exports = {
-        avg: testaverage,
-        name1: "gupta",
-        profil: "github"
-    }
+module.exports = {
+  avg: testaverage,
+  name1: "gupta",
+  profil: "github",
+};
 // module.exports.name1 = "prince";

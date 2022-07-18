@@ -49,13 +49,35 @@ found 0 vulnerabilities*/
 
 
 // ----------------------------------------------------------------------------------
+
+
+
 const { application } = require("express");
-const express = require("express")
+const express = require("express");
+const path = require("path"); /** this is a module help in Extract the filename from a file path */
+const app = express();
 const port = 80;
 
-// app.use('/static', express.static('static'))
+// for serving static file (inside express file static)
+app.use('/static', express.static('static'))
 
-const app = express();
+// set template engine as pug
+app.set('view engine', 'pug')
+
+//set the views and directory
+app.set('views', path.join(__dirname, 'views'))
+
+
+// our pug demo endpoint
+
+app.get("/demo", (req, res) => {
+  res.status(200).render('demo', { title: 'Hey brother', message: 'Hello there! welcome to the new pug response' })
+});
+
+
+
+
+
 
 app.get("/", (req, res)=>{
   res.send("one of my first app you are at home")
